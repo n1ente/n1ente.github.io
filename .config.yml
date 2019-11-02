@@ -1,0 +1,33 @@
+domain: giorgiorinolfi.com
+url: http://giorgiorinolfi.com
+name: Aereal Media Arts
+
+encoding: utf-8
+
+permalink: ./:year/:month/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - npm-debug.log
+  - node_modules/
+  - README.md
+  - package.json
+  
+plugins:
+  - jekyll-sitemap
+
+markdown: kramdown
+
+sass:
+  style: compressed
+  
+# Defaults
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
